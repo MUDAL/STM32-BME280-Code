@@ -5,7 +5,7 @@ Lightweight, reusable, and portable code to interface the Bosch Sensortec BME280
 2.) STM32F1 microcontroller e.g. STM32F103C8T6 (STM32 Blue pill board) used in the sample code    
 3.) Bosch Sensortec BME280 sensor  
 4.) Breadboard  
-5.) Male-to-male connector (x4)  
+5.) Connectors (M-M, F-F)  
 6.) ST-Link/V2 programmer  
 # Connections  
 
