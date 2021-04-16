@@ -9,15 +9,16 @@ Lightweight, reusable, and portable code to interface the Bosch Sensortec BME280
 6.) ST-Link/V2 programmer  
 # Connections  
 
-  N   |   BME280    |   STM32 
-
-1.)   |    VIN          |   3.3v
-
-2.)   |    GND          |   GND
-
-3.)   |    SDA          |   SDA ( sample code uses PB7 )
-
-4.)   |    SCL          |   SCL ( sample code uses PB6 )  
+  N   |  BME280     | STM32                           |
+      |------       |------                           |
+      |             |                                 |
+1.)   |   VIN       |  3.3v                           |
+      |             |                                 | 
+2.)   |   GND       |  GND                            |
+      |             |                                 |
+3.)   |   SDA       |  SDA ( sample code uses PB7 )   |
+      |             |                                 |
+4.)   |   SCL       |  SCL ( sample code uses PB6 )   |
 # Software Architecture  
 The program is divided into 3 layers of software. These layers are:  
 1.) The Low Layer API  
