@@ -25,8 +25,7 @@ Low Layer APIs are functions that directly interface with the STM32F1 hardware e
 
 High Layer APIs are functions that access the hardware through Low Layer APIs thereby creating a level of abstraction. e.g. BME280 drivers, and System drivers etc.
 
-The Main Application is a layer of software that is intended to reflect the logic behind the project without knowing much about the hardware. It is the highest  
-level of abstraction and it calls High Layer APIs in order to perform operations.  
+The Main Application is a layer of software that is intended to reflect the logic behind the project without knowing much about the hardware. It is the highest level of abstraction and it calls High Layer APIs in order to perform operations.    
 # Description of sample code  
 The humidity and temperature readings of the BME280 sensor (in % and Celsius respectively) are contained in a variable of type   
 **bme280_t** whose address is passed as an argument to the **BME280_Get_Data()** function. For demonstration purposes, the structure variable that contains the sensor data is named **bme280Data** and declared (in the **main** function) as follows:  
@@ -40,6 +39,10 @@ The humidity and temperature readings of the BME280 sensor (in % and Celsius res
  3.) Run the debugger  
  4.) When the debugger stops, check the **bme280Data**'s humidity and temperature structure members for the BME280 sensor's readings.  
  # Additional resources  
- 1.)RM0008 Reference manual  
- 2.)STM32F103x8 datasheet  
+ 1.) RM0008 Reference manual  
+ 2.) STM32F103x8 datasheet  
+ 3.) BME280 Datasheet  
+ # Note  
+ To use the project in a plug-and-play manner, follow the connections and instructions above and run the sample code on an STM32 Blue Pill.  
+ 
     
