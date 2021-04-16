@@ -21,7 +21,7 @@ The program is divided into 3 layers of software. These layers are:
 2.) The High Layer API  
 3.) The Main Application  
 
-Low Layer APIs are functions that directly interfaces with the STM32F1 hardware e.g. GPIO drivers, I2C drivers, SysTick drivers, and RCC drivers etc.  
+Low Layer APIs are functions that directly interface with the STM32F1 hardware e.g. GPIO drivers, I2C drivers, SysTick drivers, and RCC drivers etc.  
 
 High Layer APIs are functions that access the hardware through Low Layer APIs thereby creating a level of abstraction. e.g. BME280 drivers, and System drivers etc.
 
@@ -30,6 +30,7 @@ level of abstraction and it calls High Layer APIs in order to perform operations
 # Description of sample code  
 The humidity and temperature readings of the BME280 sensor (in % and Celsius respectively) are contained in a variable of type   
 **bme280_t** whose address is passed as an argument to the **BME280_Get_Data()** function. For demonstration purposes, the structure variable that contains the sensor data is named **bme280Data** and declared (in the **main** function) as follows:  
+
     static bme280_t bme280Data;  
  
  # Checking the sensor's readings using Keil uVsion debugger  
