@@ -8,10 +8,14 @@ Lightweight, reusable, and portable code to interface the Bosch Sensortec BME280
 5.) Male-to-male connector (x4)  
 6.) ST-Link/V2 programmer  
 # Connections  
-S/N   |   BME280    |   STM32   
+S/N   |   BME280    |   STM32 
+
 1.)   |    VIN      |   3.3v
+
 2.)   |    GND      |   GND
+
 3.)   |    SDA      |   SDA ( sample code uses PB7 )
+
 4.)   |    SCL      |   SCL ( sample code uses PB6 )  
 # Software Architecture  
 The program is divided into 3 layers of software. These layers are:  
@@ -19,7 +23,9 @@ The program is divided into 3 layers of software. These layers are:
 2.) The High Layer API  
 3.) The Main Application  
 Low Layer APIs are functions that directly interfaces with the STM32F1 hardware e.g. GPIO drivers, I2C drivers, SysTick drivers, and RCC drivers etc.  
-High Layer APIs are functions that access the hardware through Low Layer APIs thereby creating a level of abstraction. e.g. BME280 drivers, and System drivers etc.  
+
+High Layer APIs are functions that access the hardware through Low Layer APIs thereby creating a level of abstraction. e.g. BME280 drivers, and System drivers etc.
+
 The Main Application is a layer of software that is intended to reflect the logic behind the project without knowing much about the hardware. It is the highest  
 level of abstraction and it calls High Layer APIs in order to perform operations.  
 # Description of sample code  
