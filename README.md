@@ -10,7 +10,7 @@ Lightweight, reusable, and portable code to interface the Bosch Sensortec BME280
 # Connections  
 
   N   |  BME280     | STM32                           |  
-      |------       |------                           |  
+    ---  |------       |------                           |  
 1.)   |   VIN       |  3.3v                           |
       |             |                                 | 
 2.)   |   GND       |  GND                            |
