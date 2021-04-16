@@ -9,6 +9,7 @@ Lightweight, reusable, and portable code to interface the Bosch Sensortec BME280
 6.) ST-Link/V2 programmer  
 # Connections  
 
+
   N   |  BME280     | STM32                           |
       |------       |------                           |
       |             |                                 |
