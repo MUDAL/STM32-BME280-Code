@@ -32,7 +32,7 @@ The humidity and temperature readings of the BME280 sensor (in % and Celsius res
 
     static bme280_t bme280Data;  
  
- # Checking the sensor's readings using Keil uVsion debugger  
+ # Checking the sensor's readings using Keil uVision debugger  
  Steps:  
  1.) Open the Keil uVision debugger and ensure the active window is the **main.c**  
  2.) Set a breakpoint on the line in which the **System_Timer_DelayMs()** function is called in the **while(1) loop**  
