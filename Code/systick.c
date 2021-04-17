@@ -24,24 +24,6 @@ void SysTick_Init(void)
 	SysTick->CTRL |= (SysTick_CTRL_TICKINT_Msk | SysTick_CTRL_ENABLE_Msk); //Enable systick interrupt and systick timer
 }
 
-uint32_t SysTick_GetTick(void)
-{
-	/*
-	Description:
-	Gets current tick (or count or clock cycle) of the systick timer.
-	The tick is equal to the value of the 'numberOfTicks' variable which
-	is increment by the systick interrupt service routine.
-	
-	Parameters:
-	None
-	
-	Return:
-	Current tick
-	
-	*/
-	return numberOfTicks;
-}
-
 void SysTick_DelayMs(uint32_t delayTime)
 {
 	/*
