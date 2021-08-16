@@ -30,7 +30,7 @@ The Main Application is a layer of software that is intended to reflect the logi
 The humidity and temperature readings of the BME280 sensor (in % and Celsius respectively) are contained in a variable of type   
 **bme280_t** whose address is passed as an argument to the **BME280_Get_Data()** function. For demonstration purposes, the structure variable that contains the sensor data is named **bme280Data** and declared (in the **main** function) as follows:  
 
-    static bme280_t bme280Data;  
+    bme280_t bme280Data;  
  
  # Checking the sensor's readings using Keil uVision debugger  
  Steps:  
