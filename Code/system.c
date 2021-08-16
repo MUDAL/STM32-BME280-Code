@@ -5,37 +5,17 @@
 #include "systick.h"
 #include "system.h"
 
+/**
+@brief Initializes all necessary peripherals of the microcontroller
+*/
 void System_Init(void)
 {
-	/*
-	Description:
-	Initialize system settings and peripherals e.g. clocks,
-	system timer, GPIO ports (to a known state).
-	
-	Parameters:
-	None.
-	
-	Return:
-	None.
-	*/
-	
 	Clocks_Init();
 	SysTick_Init();
-	GPIO_Reset(GPIOB);
+	GPIO_Reset();
 }
 
-void System_Timer_DelayMs(uint32_t delayTime)
+void System_TimerDelayMs(uint32_t delayTime)
 {
-	/*
-	Description:
-	Delays the program for a specified time in milliseconds.
-	
-	Parameters:
-	1.) delayTime: amount of time (in milliseconds) to wait.
-	
-	Return:
-	None.
-	*/
-	
 	SysTick_DelayMs(delayTime);
 }
